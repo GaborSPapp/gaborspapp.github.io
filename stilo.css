@@ -1,0 +1,67 @@
+:root {
+	--clr-3: #1B2838;
+	--clr-5: #182433;
+	--clr-linear-start: #06BFFF;
+	--clr-linear-end: #2D73FF;
+	--clr-text: rgb(237, 237, 222);
+}
+
+::-webkit-scrollbar {
+	width: .65rem;
+}
+
+::-webkit-scrollbar-track {
+	background: var(--clr-3);
+	border-radius: var(--scrollbar-radius);
+}
+ 
+::-webkit-scrollbar-thumb {
+	background: linear-gradient(180deg, var(--clr-linear-start) 0%, var(--clr-linear-end) 100%);
+	border-radius: var(--scrollbar-radius);
+}
+
+body {
+	background-color: var(--clr-5);
+	color: var(--clr-text);
+	margin: 0;
+	font-family: "Motiva Sans", Sans-serif;
+}
+
+a, a:visited {
+	text-decoration: none;
+	color: white;
+	padding: 0 .25em;
+}
+
+.content {
+	position: absolute;
+	width: 100%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.page-container {
+	display: grid;
+	grid-gap: 2rem;
+  justify-content: center;
+}
+
+.page {
+	display: flex;
+	background: linear-gradient(90deg, var(--clr-linear-start) 0%, var(--clr-linear-end) 100%);
+	font-size: 5rem;
+	padding: 3rem;
+  justify-content: center;
+}
+
+.page-container a {
+	border-radius: 2rem;
+	overflow: hidden;
+	padding: 0;
+}
+
+.page-container a:hover > .page {
+	background: linear-gradient(90deg, var(--clr-linear-start) 30%, var(--clr-linear-end) 130%);
+}
