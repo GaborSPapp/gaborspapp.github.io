@@ -1,3 +1,3 @@
 # gaborspapp.github.io
 Project page selector  
-gaborspapp.github.io
+https://gaborspapp.github.io
